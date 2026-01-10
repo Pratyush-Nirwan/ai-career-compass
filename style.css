@@ -1,0 +1,161 @@
+/* Global reset for consistent layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Page background */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main container */
+.todo-container {
+    background-color: #ffffff;
+    width: 400px;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* App title */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Inputs and button layout */
+.todo-container input,
+.todo-container button {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Text & date input */
+input {
+    padding: 11px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Input focus */
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.4);
+}
+
+/* Add button */
+button {
+    padding: 11px;
+    font-size: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Button hover & click */
+button:hover {
+    background-color: #45a049;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+/* Task card */
+li {
+    background-color: #f7f7f7;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: transform 0.15s, background-color 0.2s;
+}
+
+/* Hover effect */
+li:hover {
+    transform: translateY(-1px);
+    background-color: #eeeeee;
+}
+
+/* Task row (text + delete button) */
+.task-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Task text */
+.task-row span {
+    font-size: 15px;
+    color: #333;
+}
+
+/* Deadline text */
+.deadline {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Completed task */
+.completed {
+    background-color: #e3f3ea;
+    text-decoration: line-through;
+    color: #777;
+}
+
+/* Overdue task */
+.overdue {
+    border-left: 5px solid #e53935;
+    background-color: #ffecec;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #ff5c5c;
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* Delete hover */
+.delete-btn:hover {
+    background-color: #d93636;
+}
+
+/* Calendar heading */
+h3 {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Calendar list */
+#calendarList li {
+    background-color: #eef3ff;
+    border-left: 4px solid #4CAF50;
+    font-size: 13px;
+}

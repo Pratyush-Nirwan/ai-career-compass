@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-Do List</title>
+
+    <!-- Linking the CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Main container which holds everthing in it -->
+<div class="todo-container">
+    <h2>To-Do List</h2>  <!-- heading -->
+    <!-- Input field for task name -->
+<input type="text" id="taskInput" placeholder="Enter task">
+<input type="date" id="deadlineInput">
+
+<!-- Button to add task -->
+<button id="addBtn">Add</button>
+<button id="clearBtn">Clear All</button>
+
+    <!-- List where all tasks will be added -->
+    <ul id="taskList"></ul>
+    <!-- Calendar section to display tasks by deadline -->
+<h3 style="margin-top:20px;">Calendar View</h3>
+<ul id="calendarList"></ul>
+
+
+</div>
+
+<!-- Linking external JavaScript file for handling logic and DOM manipulation -->
+<!-- Script is placed at the bottom to ensure HTML loads before JS runs -->
+<script src="script.js"></script>
+
+</body>
+</html>
