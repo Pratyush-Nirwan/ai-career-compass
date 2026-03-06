@@ -101,11 +101,6 @@ function Questionnaire() {
   return (
     <Layout>
       <div className="relative max-w-3xl mx-auto">
-
-        {/* Animated Background Blobs */}
-        <div className="absolute -top-20 -left-20 w-72 h-72 bg-pink-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-        <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-indigo-500 rounded-full blur-3xl opacity-30 animate-pulse"></div>
-
         {loading ? (
           <div className="text-center py-32">
             <motion.div
